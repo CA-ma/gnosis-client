@@ -1,5 +1,5 @@
 describe("Visitor can change language from", () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit("http://localhost:3001");
     cy.get('#english').click({ force: true });
   });
@@ -17,3 +17,7 @@ describe("Visitor can change language from", () => {
     cy.get('#language').should('contain', 'Engelska');
   });
 });
+
+/* it("Home button should not contain 'navbar.home'", () => {
+  cy.get('#home-button').should('not.contain', 'navbar.home');
+}); */

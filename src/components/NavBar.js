@@ -8,11 +8,6 @@ import UpdateLanguage from './UpdateLanguage';
 import i18n from "../i18n";
 
 class NavBar extends Component {
-
-  // constructor(props) {
-  //   super(props)
-    
-  // }
   state = { activeItem: 'latest news', language: '' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
@@ -44,7 +39,7 @@ class NavBar extends Component {
     if (this.props.currentUser.attributes.role === "research_group") {
       createArticleButton = (
         <Menu.Item id="create-article-button" as={NavLink} to="/createarticle">
-          {i18n.t('navbar:create_article')}
+          {i18n.t('navbar.create_article')}
         </Menu.Item>
       );
     }

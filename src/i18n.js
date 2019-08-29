@@ -14,10 +14,6 @@ i18n
     interpolation: {
       escapeValue: false
     }
-  }, (e, t) => {
-    console.log("What TF am I doing?????")
-    console.log(e)
-    console.log(t('navbar.medicine'))
   });
 
 export default i18n;
